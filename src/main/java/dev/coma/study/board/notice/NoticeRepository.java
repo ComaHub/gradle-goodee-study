@@ -1,4 +1,4 @@
-package com.coma.study.board.notice;
+package dev.coma.study.board.notice;
 
 import java.util.List;
 

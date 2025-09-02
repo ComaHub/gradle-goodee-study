@@ -1,4 +1,4 @@
-package com.coma.study.member;
+package dev.coma.study.member;
 
 import java.io.Serializable;
 

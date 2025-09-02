@@ -1,7 +1,6 @@
-package com.coma.study.qna;
+package dev.coma.study.qna;
 
-import com.coma.study.board.BoardDTO;
-
+import dev.coma.study.board.BoardDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Table;
 import lombok.Getter;

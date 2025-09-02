@@ -12,6 +12,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.transaction.annotation.Transactional;
 
+import dev.coma.study.board.notice.NoticeDTO;
+import dev.coma.study.board.notice.NoticeRepository;
 import lombok.extern.slf4j.Slf4j;
 
 @SpringBootTest

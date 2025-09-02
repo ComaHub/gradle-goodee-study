@@ -1,4 +1,4 @@
-package com.coma.study.board.notice;
+package dev.coma.study.board.notice;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -13,8 +13,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.coma.study.board.BoardDTO;
-
+import dev.coma.study.board.BoardDTO;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController

@@ -1,4 +1,4 @@
-package com.coma.study.board;
+package dev.coma.study.board;
 
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;

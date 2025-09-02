@@ -9,6 +9,12 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
+import dev.coma.study.member.MemberDTO;
+import dev.coma.study.member.MemberRepository;
+import dev.coma.study.member.MemberRoleDTO;
+import dev.coma.study.member.RoleDTO;
+import dev.coma.study.member.RoleRepository;
+
 @SpringBootTest
 class MemberRepositoryTest {
 	@Autowired

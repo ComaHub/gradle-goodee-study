@@ -1,8 +1,8 @@
-package com.coma.study.board.notice;
+package dev.coma.study.board.notice;
 
-import com.coma.study.board.BoardFileDTO;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+import dev.coma.study.board.BoardFileDTO;
 import jakarta.persistence.Entity;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;

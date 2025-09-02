@@ -1,9 +1,8 @@
-package com.coma.study.board.notice;
+package dev.coma.study.board.notice;
 
 import java.util.List;
 
-import com.coma.study.board.BoardDTO;
-
+import dev.coma.study.board.BoardDTO;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.FetchType;
