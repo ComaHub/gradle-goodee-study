@@ -1,4 +1,4 @@
-package com.coma.study.member;
+package dev.coma.study.member;
 
 import static org.junit.jupiter.api.Assertions.*;
 

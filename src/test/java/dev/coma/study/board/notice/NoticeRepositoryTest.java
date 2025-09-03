@@ -1,4 +1,4 @@
-package com.coma.study.board.notice;
+package dev.coma.study.board.notice;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -10,10 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
-import org.springframework.transaction.annotation.Transactional;
 
-import dev.coma.study.board.notice.NoticeDTO;
-import dev.coma.study.board.notice.NoticeRepository;
 import lombok.extern.slf4j.Slf4j;
 
 @SpringBootTest
@@ -25,7 +22,7 @@ class NoticeRepositoryTest {
 	@Test
 	void test() throws Exception {
 		NoticeDTO noticeDTO = new NoticeDTO();
-		noticeDTO.setBoardTitle("여기는 ㅇㅅㅇ하는 사람 없나?");
+		noticeDTO.setBoardTitle("여기는 ㅇㅅㅇ하는 사람 없어서 좋은 듯");
 		noticeDTO.setBoardContent("ㅇㅅㅇ");
 		noticeDTO.setBoardWriter("ㅇㅇ");
 

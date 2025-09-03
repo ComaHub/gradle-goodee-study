@@ -32,14 +32,17 @@ public class NoticeController {
 	
 	@GetMapping("{boardNum}")
 	public BoardDTO getNoticeDetail(@PathVariable("boardNum") Long boardNum) throws Exception {
-		BoardDTO boardDTO = noticeService.getNoticeDetail(boardNum);
+		NoticeDTO noticeDTO = noticeService.getNoticeDetail(boardNum);
 		
-		return boardDTO;
+		return noticeDTO;
 	}
 	
 	@PostMapping
-	public void postNotice() {
+	public boolean postNotice(NoticeDTO noticeDTO) {
+		noticeDTO = noticeService.addNotice(noticeDTO);
 		
+		if (noticeDTO != null) return true;
+		else return false;
 	}
 	
 	@PutMapping("{boardNum}")

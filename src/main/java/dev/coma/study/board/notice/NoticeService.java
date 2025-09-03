@@ -23,4 +23,8 @@ public class NoticeService {
 		
 		return result.orElseThrow();
 	}
+
+	public NoticeDTO addNotice(NoticeDTO noticeDTO) {
+		return noticeRepository.saveAndFlush(noticeDTO);
+	}
 }

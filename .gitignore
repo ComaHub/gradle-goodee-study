@@ -1,5 +1,5 @@
-# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,java,eclipse,intellij,visualstudiocode,maven,gradle
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,java,eclipse,intellij,visualstudiocode,maven,gradle
+# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,java,eclipse,intellij,visualstudiocode,maven,gradle,react
+# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,java,eclipse,intellij,visualstudiocode,maven,gradle,react
 
 # Coma 2025.09.02
 
@@ -331,4 +331,28 @@ gradle-app.setting
 # Java heap dump
 *.hprof
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,macos,java,eclipse,intellij,visualstudiocode,maven,gradle
+### React ###
+.DS_*
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+**/*.backup.*
+**/*.back.*
+
+node_modules
+bower_components
+dist
+dist-ssr
+*.local
+
+*.sublime*
+
+psd
+thumb
+sketch
+
+# End of https://www.toptal.com/developers/gitignore/api/windows,macos,java,eclipse,intellij,visualstudiocode,maven,gradle,react
