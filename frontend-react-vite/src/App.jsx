@@ -1,19 +1,17 @@
-import Add from "./components/Add.jsx";
-import MyList from "./components/MyList.jsx";
 import Header from "./layout/Header.jsx";
-import StudyEffect from "./study/StudyEffect.jsx";
-import StudyRef from "./study/StudyRef.jsx";
-import StudyState from "./study/StudyState.jsx";
+import AppRoutes from "./router/AppRoutes.jsx";
 
-function App() {
+export default function App() {
+  let age = 10
+  let obj = {
+    age : 700,
+    name : "정리제"
+  }
 
   return (
     <>
       <Header />
-      <h1>Index page</h1>
-      <Add />
+      <AppRoutes />
     </>
   )
 }
-
-export default App

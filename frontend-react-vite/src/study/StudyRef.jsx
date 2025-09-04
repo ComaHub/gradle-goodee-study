@@ -1,6 +1,6 @@
 import { useRef, useState } from "react"
 
-function StudyRef() {
+export default function StudyRef() {
   const [count, setCount] = useState(0)
 
   const age = useRef(0)
@@ -24,5 +24,3 @@ function StudyRef() {
     </>
   )
 }
-
-export default StudyRef

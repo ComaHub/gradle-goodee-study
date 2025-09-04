@@ -12,12 +12,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.multipart.MultipartFile;
 
 import dev.coma.study.board.BoardDTO;
 import lombok.extern.slf4j.Slf4j;
 
 @RestController
-@RequestMapping("/notice/**")
+@RequestMapping("/api/notice/**")
 @Slf4j
 public class NoticeController {
 	@Autowired
@@ -38,8 +39,9 @@ public class NoticeController {
 	}
 	
 	@PostMapping
-	public boolean postNotice(NoticeDTO noticeDTO) {
-		noticeDTO = noticeService.addNotice(noticeDTO);
+	public boolean postNotice(NoticeDTO noticeDTO, MultipartFile[] attaches) {
+		//noticeDTO = noticeService.addNotice(noticeDTO);
+		System.out.println(attaches.length);
 		
 		if (noticeDTO != null) return true;
 		else return false;

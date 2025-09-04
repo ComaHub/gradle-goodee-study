@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function StudyState() {
+export default function StudyState() {
   const [count, setCount] = useState(0);
 
   function increase() {
@@ -15,5 +15,3 @@ function StudyState() {
     </>
   )
 }
-
-export default StudyState

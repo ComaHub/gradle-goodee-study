@@ -1,6 +1,7 @@
-import { useEffect, useState } from "react"
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
-function MyList() {
+export default function List() {
   const [boards, setBoards] = useState([])
   const [page, setPage] = useState(0)
 
@@ -21,7 +22,7 @@ function MyList() {
   }
 
   useEffect(() => {
-    fetch(`http://localhost/notice?page=${page}`, {
+    fetch(`http://localhost/api/notice?page=${page}`, {
       method : "GET"
     })
     .then((data) => data.json())
@@ -47,8 +48,9 @@ function MyList() {
         <h3>Page: {page}</h3>
         <button onClick={nextPage}>NEXT</button>
       </div>
+      <div>
+        <Link to="/notice/add">Add</Link>
+      </div>
     </>
   )
 }
-
-export default MyList

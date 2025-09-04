@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 
-function StudyEffect() {
+export default function StudyEffect() {
   const [count, setCount] = useState(0)
 
   function increase() {
@@ -38,5 +38,3 @@ function StudyEffect() {
     </>
   )
 }
-
-export default StudyEffect
