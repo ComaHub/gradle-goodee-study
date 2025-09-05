@@ -23,7 +23,10 @@ export default function List() {
 
   useEffect(() => {
     fetch(`http://localhost/api/notice?page=${page}`, {
-      method : "GET"
+      method : "GET",
+      headers : {
+        Authorization : "Bearer " + sessionStorage.getItem("accessToken")
+      }
     })
     .then((data) => data.json())
     .then((data) => {

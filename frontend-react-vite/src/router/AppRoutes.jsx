@@ -7,6 +7,7 @@ import StudyRef from "../study/StudyRef";
 import StudyEffect from "../study/StudyEffect";
 import StudyParam from "../study/StudyParam";
 import Login from "../components/member/Login";
+import Logout from "../components/member/Logout";
 
 export default function AppRoutes() {
 
@@ -20,6 +21,7 @@ export default function AppRoutes() {
         </Route>
         <Route path="/member">
           <Route path="login" element={<Login />} />
+          <Route path="logout" element={<Logout />} />
         </Route>
         <Route path="/study">
           <Route path="state" element={<StudyState />} />

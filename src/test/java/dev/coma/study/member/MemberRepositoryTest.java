@@ -8,6 +8,7 @@ import java.util.List;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import dev.coma.study.member.MemberDTO;
 import dev.coma.study.member.MemberRepository;
@@ -21,14 +22,16 @@ class MemberRepositoryTest {
 	private MemberRepository memberRepository;
 	@Autowired
 	private RoleRepository roleRepository;
+	@Autowired
+	private PasswordEncoder passwordEncoder;
 	
 	@Test
 	void test() {
 		MemberDTO memberDTO = new MemberDTO();
 		memberDTO.setMemberId("user");
-		memberDTO.setMemberPw("0000");
+		memberDTO.setMemberPw(passwordEncoder.encode("0000"));
 		
-		RoleDTO roleDTO = roleRepository.findById(2L).get();
+		RoleDTO roleDTO = roleRepository.findById(3L).get();
 		
 		MemberRoleDTO memberRoleDTO = new MemberRoleDTO();
 		memberRoleDTO.setMemberDTO(memberDTO);
